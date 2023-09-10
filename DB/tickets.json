@@ -1,0 +1,40 @@
+{
+	"tickets": [
+		{
+			"id": 1,
+      "price": 21032,
+			"date": "Fri Oct 09 2018 09:25",
+			"origin": "VVO, Vladivostok",
+			"destination": "Tel-Aviv, TLV",
+			"arrives": "Sat Oct 10 2018 11:45",
+			"stops": 1
+		},
+		{
+			"id": 2,
+      "price": 22245,
+			"date": "Fri Oct 09 2018 10:35",
+			"origin": "VVO, Vladivostok",
+			"destination": "Tel-Aviv, TLV",
+			"arrives": "Sat Oct 10 2018 12:34",
+			"stops": 2
+		},
+		{
+			"id": 3,
+      "price": 25000,
+			"date": "Fri Oct 09 2018 14:15",
+			"origin": "VVO, Vladivostok",
+			"destination": "Tel-Aviv, TLV",
+			"arrives": "Sat Oct 10 2018 15:00",
+			"stops": 3
+		},
+		{
+			"id": 4,
+      "price": 30000,
+			"date": "Fri Oct 09 2018 10:15",
+			"origin": "VVO, Vladivostok",
+			"destination": "Tel-Aviv, TLV",
+			"arrives": "Sat Oct 10 2018 20:45",
+			"stops": 0
+		}
+	]
+}

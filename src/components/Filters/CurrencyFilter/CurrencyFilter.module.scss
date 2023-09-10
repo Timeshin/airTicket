@@ -1,0 +1,58 @@
+
+.currencyFilter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .title {
+    color: rgba(0, 0, 0, 0.64);
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  
+    .currencyFilterItem {
+      padding: 15px;
+      color: #2196F3;
+      border: 1px solid gray;
+      background: #fff;
+      letter-spacing: .5px;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all .2s;
+  
+      &:first-child {
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        border-right: none;
+      }
+  
+      &:last-child {
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        border-left: none;
+      }
+  
+      &:hover {
+        border-color: #2196F3;
+        background: #F1FCFF;
+      }
+    }
+  
+    .active {
+      background: #2196F3;
+      color: #fff;
+  
+      &:hover {
+        background: #2196F3;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.ticket {
+  max-width: 500px;
+  width: 100%;
+  background: #fff; 
+  display: flex;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  
+  &__price {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-right: rgba(128, 128, 128, 0.45) 1px solid;
+    flex-grow: 1;
+    font-weight: 600;
+    
+
+    button {
+      letter-spacing: 1px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 5;
+    padding: 20px 20px 20px 10px;
+
+    .tripTime {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 5px;
+      gap: 25px;
+
+      .origin {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        color: black;
+        font-size: 32px;
+      }
+  
+      .stops {
+        white-space: nowrap;
+        margin-top: 5px;
+        color: gray;
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: -7%;
+          width: 120%;
+          height: 1px;
+          background: gray;
+        }
+      }
+  
+      .destination {
+        @extend .origin;
+      }
+    }
+
+    .tripInfo {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      &__origin {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        p:first-child {
+          font-size: 14px;
+          color: rgb(67, 67, 67);
+        }
+  
+        p:last-child {
+          width: fit-content;
+          font-size: 12px;
+          color: gray;
+        }
+      }
+  
+      &__destination {
+        @extend .tripInfo__origin;
+
+        p {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}
