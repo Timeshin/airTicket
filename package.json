@@ -60,11 +60,6 @@
 		"lint-staged": "^13.0.4",
 		"prettier": "^2.8.0"
 	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "prettier --write --config .prettierrc.json"
-		}
-	},
 	"lint-staged": {
 		"**/*.+(ts|tsx)": [
 			"eslint . --fix",
