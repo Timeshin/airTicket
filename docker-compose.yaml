@@ -1,12 +1,13 @@
 version: '3'
 
 services:
-  client_tickets:
+  app:
+    container_name: air-tickets
+    image: air-tickets
     build: .
     ports:
       - '3000:3000'
       - '8080:8080'
-    container_name: air_tickets
     volumes:
       - ./src:/app/src
       - ./DB:/app/DB
