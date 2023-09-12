@@ -1,18 +1,37 @@
-# AirTickets 
- 
-### install dependencies
+## About project
 
-`npm install`
+Simple application introduce list of air tickets with stops filter and currency changer (current course).
 
-### start project
+Technologies: React, TypeScript, MobX.
 
-`npm run start:dev`
+## Installation
 
-### Run using docker compose
+```
+npm install
+```
 
-`docker-compose up`
+#### Before commits
+
+```
+npm run prepare
+```
+
+### Run project
+
+#### Dev
+
+```
+npm run start:dev
+```
+
+## Or run in docker
+
+```
+docker-compose up
+```
 
 
-#### App view
+#### Presentation
 
-![image](https://user-images.githubusercontent.com/108158687/209230220-2a0614d0-c422-4d4e-b461-d78481b5953e.png)
+<img width="1065" alt="Screenshot 2023-09-12 at 14 17 59" src="https://github.com/Timeshin/airTickets/assets/108158687/7d459678-0e88-4e17-9aa6-a33a2642c784">
+
