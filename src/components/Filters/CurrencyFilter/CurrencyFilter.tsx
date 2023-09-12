@@ -1,4 +1,4 @@
-import CurrencyStore from 'src/store/currencyStore'
+import CurrencyStore from 'src/store/currency.store'
 import { observer } from 'mobx-react-lite'
 import { currencyFilterData } from './CurrencyFilter.meta'
 import { CurrencyType } from 'src/types/filterStore.interface'

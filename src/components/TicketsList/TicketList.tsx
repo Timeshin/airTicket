@@ -2,7 +2,7 @@ import { observer } from 'mobx-react-lite'
 import { useCallback, useMemo } from 'react'
 import { useEffect, useState } from 'react'
 import TicketsService from 'src/services/tickets.service'
-import FilterStore from 'src/store/filterStore'
+import FilterStore from 'src/store/filter.store'
 import { ITicket } from 'src/types/services.interface'
 import TicketItem from '../TicketItem/TicketItem'
 
@@ -26,6 +26,8 @@ const TicketList = observer(() => {
 
 		try {
 			const tickets = await TicketsService.getTickets()
+
+			tickets.sort((a, b) => b.price - a.price)
 
 			setTickets(tickets)
 			setStatus('success')

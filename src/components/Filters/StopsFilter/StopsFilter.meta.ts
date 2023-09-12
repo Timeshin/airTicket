@@ -1,8 +1,8 @@
-import { StopsType } from 'src/types/filterStore.interface'
+import { Stops } from 'src/types/services.interface'
 
 interface IStopsData {
 	text: string
-	value: StopsType | 'all'
+	value: Stops | 'all'
 }
 
 export const stopsData: IStopsData[] = [

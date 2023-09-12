@@ -1,4 +1,4 @@
-import getTripTime from './getTripTime'
 import getTripDate from './getTripDate'
+import getAirlineLogo from './getAirlineLogo'
 
-export { getTripTime, getTripDate }
+export { getTripDate, getAirlineLogo }

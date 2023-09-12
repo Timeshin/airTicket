@@ -1,5 +1,6 @@
 import { makeAutoObservable } from 'mobx'
-import { CurrencyType, StopsType } from 'src/types/filterStore.interface'
+import { CurrencyType } from 'src/types/filterStore.interface'
+import { Stops } from 'src/types/services.interface'
 
 class FilterStore {
 	currency: CurrencyType = {
@@ -7,13 +8,13 @@ class FilterStore {
 		symbol: '₽'
 	}
 
-	filterStops: StopsType[] | [] = []
+	filterStops: Stops[] | [] = []
 
 	constructor() {
 		makeAutoObservable(this)
 	}
 
-	changeStops(stopValue: StopsType | 'all') {
+	changeStops(stopValue: Stops | 'all') {
 		if (stopValue === 'all') {
 			this.filterStops = []
 
